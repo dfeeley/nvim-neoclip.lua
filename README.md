@@ -135,6 +135,7 @@ require('neoclip').setup({
   disable_keycodes_parsing = false,
   initial_mode = 'insert',
   dedent_picker_display = false,
+  picker_display_callback = nil,
   on_select = {
 	move_to_front = false,
 	close_telescope = true,
@@ -213,6 +214,7 @@ require('neoclip').setup({
   It will only show the type and number of lines next to the first line of the entry.
 * `initial_mode`: The mode in which to start the telescope picker, can be `insert` or `normal` (default `insert`).
 * `dedent_picker_display`: If `true` trim leading whitespace when displaying items in the picker (default `false`).
+* `picker_display_callback`: Function to call to customize the display of an item in the picker (default `nil`).
 * `on_select`:
   * `move_to_front`: if the entry should be set to last in the list when pressing the key to select a yank.
   * `close_telescope`: if telescope should close whenever an item is selected.

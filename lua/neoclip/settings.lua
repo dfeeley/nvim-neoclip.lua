@@ -15,6 +15,7 @@ local settings = {
     disable_keycodes_parsing = false,
     initial_mode = 'insert',
     dedent_picker_display = false,
+    picker_display_callback = nil,
     on_select = {
         move_to_front = false,
         close_telescope = true,

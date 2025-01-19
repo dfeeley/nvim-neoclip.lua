@@ -192,6 +192,10 @@ local function make_display(entry, typ)
       to_display[1] = picker_utils.dedent_picker_display(to_display[1])
     end
 
+    if settings.picker_display_callback then
+      to_display[1] = settings.picker_display_callback(to_display[1])
+    end
+
     return displayer(to_display)
 end
 

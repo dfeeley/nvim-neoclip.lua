@@ -14,6 +14,7 @@ local settings = {
     content_spec_column = false,
     disable_keycodes_parsing = false,
     initial_mode = 'insert',
+    dedent_picker_display = false,
     on_select = {
         move_to_front = false,
         close_telescope = true,
